@@ -47,16 +47,16 @@ body{
     left: 0;
     width: 100%;
     padding: 4rem 12% 4rem;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgb(15, 15, 15);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 5;
+    z-index: 7;
 }
 .logo{
     font-size: 3rem;
-    color: #0096FF;
+    color: var(--main-color);
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease;
@@ -68,7 +68,7 @@ body{
     text-shadow: 0 0 25px var(--main-color);
 }
 .navbar a{
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 2rem;
     font-weight: 500;
@@ -173,7 +173,7 @@ span{
     box-shadow: 0 0 25px var(--main-color);
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: #080808;
+    color: var(--bg-color);
     border: 2px solid transparent;
     letter-spacing: 0.1rem;
     font-weight: 600;
@@ -190,7 +190,7 @@ span{
     gap: 1.5rem;
 }
 .btn-group a:nth-of-type(2){
-    background-color: #080808;
+    background-color: var(--bg-color);
     color: var(--main-color);
     border: 2px solid var(--main-color);
     box-shadow: 0 0 25px transparent;
@@ -198,7 +198,7 @@ span{
 .btn-group a:nth-of-type(2):hover{
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
-    color: #080808;
+    color:var(--bg-color);
 }
 .text-animation{
     font-size: 34px;
@@ -335,6 +335,43 @@ span{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+
+/* ***************Skills Section************** */
+
+.skills {
+    background: var(--bg-color);
+}
+.skilltitle{
+    font-size: 5rem;
+    text-align: left;
+    margin: 2rem 0;
+    color: var(--text-color);
+}
+.tech-list {
+        display: inline-block;
+        list-style: none;
+        }
+
+    .tech-list li {
+        display: inline-block;
+        font-size: 1.9rem;
+        font-weight: 600;
+        color: var(--text-color);
+        border: var(--main-color) 2px solid;
+        padding: 8px;
+        margin: 6px; 
+    }
+    li:nth-child(odd) {
+        color: var(--text-color); /* Text color for odd list items */
+        border-color: var(--main-color); /* Border color for odd list items */
+    }
+
+    li:nth-child(even) {
+        border-color: var(--text-color); /* Border color for even list items */
+        /* color: var(--main-color);  */
+    }
+    
+
 
 /* ***************Projects Section************** */
 .projects {
@@ -518,11 +555,11 @@ span{
 
 .services{
     background: var(--bg-color);
-    color: #080808;
+    color: var(--bg-color);
 }
 .services h2{
     margin-bottom: 5rem;
-    color: #fff;
+    color: var(--text-color);
 }
 .services-container{
     display: grid;
@@ -539,8 +576,8 @@ span{
     transition: 0.4s ease-in-out;
 }
 .service-box:hover{
-    background: #fff;
-    color: #131313;
+    background: var(--text-color);
+    color: var(--bg-color);
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
@@ -608,7 +645,7 @@ span{
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    color: #fff;
+    color: var(--text-color);
     transition: 0.4s ease-in-out;
 }
 .achievements-item:hover{
@@ -653,7 +690,7 @@ span{
 .testimonial-item{
     min-height: 490px;
     max-width: 450px;
-    background: #080808;
+    background:var(--bg-color);
     border: 3px solid rgba(238, 238, 238, 0.3);
     border-radius: 2rem;
     margin: 0 2rem;
@@ -664,7 +701,7 @@ span{
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    color: #fff;
+    color: var(--text-color);
     transition: 0.4s ease-in-out;
 }
 .testimonial-item:hover{
@@ -690,7 +727,7 @@ span{
 }
 .contact h2{
     margin-bottom: 3rem;
-    color: #fff;
+    color: var(--text-color);
 }
 .contact form{
     display: flex;
