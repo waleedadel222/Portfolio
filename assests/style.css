@@ -454,15 +454,22 @@ span{
     box-shadow: 0 0 25px var(--main-color);
 }
 .timeline-content h3{
-    font-size: 20px;
     color: var(--text-color);
-    margin: 0 0 10px;
+    font-size: 20px;
+    margin: 0 0 3px;
+    font-weight: 500;
+    
+}
+.timeline-content h4{
+    color: var(--text-color);
+    font-size: 17px;
+    margin: 0 0 3px;
     font-weight: 500;
     
 }
 .timeline-content p{
     color: var(--text-color);
-    font-size: 13px;
+    font-size: 17px;
     font-weight: 300;
     line-height: 17px;
 }
